@@ -10,6 +10,17 @@ The paid ZIP includes a self-contained HTML app, original source, parser tests, 
 
 The browser demo and screenshots help you evaluate it before purchase. The commercial package is delivered after Stripe confirms payment. Bookmark the private order page returned by checkout for later downloads.
 
+![The offline app cleaning a synthetic customer export](preview.png)
+
+## Try a realistic export
+
+1. Open the [browser demo](https://csv-rescue-kit-20261002.samgelosh.chatgpt.site/#demo).
+2. Click **Load sample**, then **Clean CSV**. The synthetic sample has five data rows: one empty row and one exact duplicate are removed, leaving three.
+3. Review the preview and cleanup counts. The identifiers `00123`, `00007` and `00008` stay strings. Export JSON to inspect those strings without spreadsheet type inference.
+4. Compare normal and spreadsheet-safe CSV on the sample's `=1+1` text. Safe export prefixes it with an apostrophe, which changes the text.
+
+The [100-row evaluation download](https://github.com/samgelosh-create/csv-rescue-kit-20261002/releases/tag/demo-v1) also works offline. It is a trial of the same cleanup workflow. The $19 commercial package includes the full 5 MiB app, development files, examples, instructions and the commercial internal-use license.
+
 ## Review exports before use
 
 All values stay strings; spreadsheet applications may still infer numeric types when opening CSV. Import identifier columns as Text. Spreadsheet-safe export adds apostrophe prefixes to formula-prone text, including negative numbers; inspect the result in your spreadsheet program. Automatic delimiter detection is heuristic.
