@@ -25,6 +25,8 @@ The [100-row evaluation download](https://github.com/samgelosh-create/csv-rescue
 
 All values stay strings; spreadsheet applications may still infer numeric types when opening CSV. Import identifier columns as Text. Spreadsheet-safe export adds apostrophe prefixes to formula-prone text, including negative numbers; inspect the result in your spreadsheet program. Automatic delimiter detection is heuristic.
 
+The original [CSV cleanup checklist](https://csv-rescue-kit-20261002.samgelosh.chatgpt.site/csv-cleanup-checklist) walks through a small before-and-after example. It explains when trimming and exact deduplication are appropriate, how to keep an untouched copy, and what to review before importing the result. The example was checked against the kit's parser.
+
 ## What is in this repository
 
 This is the public product listing with synthetic sample files. The commercial ZIP is delivered through checkout. No customer data, credentials or private order records are included.
